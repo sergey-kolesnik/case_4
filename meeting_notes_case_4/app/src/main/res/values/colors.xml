@@ -1,0 +1,17 @@
+<resources>
+    <color name="primary">#245B5A</color>
+    <color name="primary_dark">#173F3F</color>
+    <color name="accent">#D36B4B</color>
+    <color name="accent_dark">#A84D34</color>
+    <color name="surface">#FFFCF7</color>
+    <color name="surface_variant">#EAE2D7</color>
+    <color name="background">#F4EFE8</color>
+    <color name="text_primary">#2D2A26</color>
+    <color name="text_secondary">#70685F</color>
+    <color name="storage_background">#DDECE7</color>
+    <color name="storage_text">#1D625B</color>
+    <color name="outline">#C9BDB0</color>
+    <color name="divider">#E3DAD0</color>
+    <color name="danger">#B5483F</color>
+    <color name="white">#FFFFFF</color>
+</resources>

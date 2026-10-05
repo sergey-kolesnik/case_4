@@ -1,0 +1,23 @@
+#!/usr/bin/env sh
+set -eu
+
+# Упрощенный переносимый запуск Gradle: использует установленный Gradle
+# либо загружает совместимую версию в локальный каталог проекта.
+if command -v gradle >/dev/null 2>&1; then
+  exec gradle "$@"
+fi
+
+PROJECT_DIR=$(CDPATH= cd -- "$(dirname -- "$0")" && pwd)
+CACHE_DIR="$PROJECT_DIR/.gradle-local"
+GRADLE_HOME="$CACHE_DIR/gradle-8.10.2"
+ARCHIVE="$CACHE_DIR/gradle-8.10.2-bin.zip"
+
+if [ ! -x "$GRADLE_HOME/bin/gradle" ]; then
+  mkdir -p "$CACHE_DIR"
+  if [ ! -f "$ARCHIVE" ]; then
+    curl -L --fail --output "$ARCHIVE" https://services.gradle.org/distributions/gradle-8.10.2-bin.zip
+  fi
+  unzip -q -o "$ARCHIVE" -d "$CACHE_DIR"
+fi
+
+exec "$GRADLE_HOME/bin/gradle" "$@"

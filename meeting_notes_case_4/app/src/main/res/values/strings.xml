@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">Деловые заметки</string>
+    <string name="app_subtitle">Встречи, задачи и договорённости</string>
+    <string name="search_hint">Найти заметку</string>
+    <string name="empty_notes">Пока нет заметок\nНажмите +, чтобы создать первую</string>
+    <string name="new_note">Новая заметка</string>
+    <string name="edit_note">Редактирование</string>
+    <string name="note_text_section">Содержание</string>
+    <string name="schedule_section">Дата и время</string>
+    <string name="title_hint">Заголовок</string>
+    <string name="content_hint">Содержание встречи или задачи</string>
+    <string name="date">Дата</string>
+    <string name="time">Время</string>
+    <string name="storage_title">Где хранить заметку</string>
+    <string name="storage_sqlite">В базе SQLite</string>
+    <string name="storage_file">В файле JSON</string>
+    <string name="save">Сохранить заметку</string>
+    <string name="edit">Изменить</string>
+    <string name="delete">Удалить</string>
+    <string name="add_note">Добавить заметку</string>
+</resources>
